@@ -25,22 +25,22 @@ ms.locfileid: "39156485"
 
 이 문제는 모바일 플렛폼을 타겟으로 개발할 때 일반적으로 발생합니다. 현재 두개의 메이저 모바일 플렛폼이 존재합니다. iOS 운영체제를 사용하는 아이폰, 아이패드 애플 제품군과 안드로이드 운영체제를 사용하는 수많은 스마트폰과 태블릿이 있습니다. 그밖에 중요한 플렛폼으로 마이크로소프트의 Universal Windows Platform (UWP)이 있으며 Windows 10과 Windows 10 Mobile을 타겟으로 하는 단일 프로그램을 개발할 수 있습니다.
 
-이러한 세 플랫폼을 대상으로 하려는 소프트웨어 공급 업체는 서로 다른 사용자 인터페이스 패러다임, 세 가지 다른 개발 환경, 세 개의 서로 다른 프로그래밍 인터페이스 &mdash;아마도 가장 껄끄러운 부분인&mdash; 세 가지 프로그래밍 언어를(아이폰, 아이패드의 Objective-C, Android의 Java, Windows의 C#) 다루어야 합니다.
+이러한 세 플랫폼을 대상으로 하려는 소프트웨어 공급 업체는 서로 다른 사용자 인터페이스 패러다임, 세 가지 다른 개발 환경, 세 개의 서로 다른 프로그래밍 인터페이스 &mdash;아마도 가장 껄끄러운 부분인&mdash; 세 가지 프로그래밍 언어를(iPhone, iPad의 Objective-C, Android의 Java, Windows의 C#) 다루어야 합니다.
 
 ## <a name="the-c-and-net-solution"></a>C#과 .NET 솔루션
 
-Objective-C, Java 및 C#은 모두 C 프로그래밍 언어에서 파생되었지만, 서로 다른 방향으로 발전하였습니다. C#은 이들 언어 중 가장 최근에 등장한 언어이자 매우 유용한 방식으로 성숙해 왔습니다. 또한 C#은 .NET이라는 프로그래밍 인프라와 밀접하게 관련되어 있습니다. .NET은 수학, 디버깅, 리플렉션, 컬렉션, 세계화, 파일 I/O, 네트워킹, 보안, 스레딩, 웹 서비스, 데이터 처리 및 XML과 JSON 읽기와 쓰기를 지원합니다.
+Objective-C, Java 및 C#은 모두 C 프로그래밍 언어에서 파생되었지만, 서로 다른 방향으로 발전하였습니다. C#은 이들 언어 중 가장 최신 언어이며 매우 유용한 방향으로 성장해 왔습니다. 또한 C#은 .NET이라는 프로그래밍 인프라와 밀접하게 관련되어 있습니다. .NET은 수학, 디버깅, 리플렉션, 컬렉션, 세계화, 파일 I/O, 네트워킹, 보안, 스레딩, 웹 서비스, 데이터 처리 및 XML과 JSON 읽기와 쓰기를 지원합니다.
 
-현재 Xamarin은 네이티브 Mac, iOS 및 Android API를 지원하는 C#, .NET 도구를 제공합니다. 이러한 도구는 Xamarin.Mac, Xamarin.iOS 및 Xamarin.Android라고 불리며 통칭하여 Xamarin 플랫폼이라고 합니다. Xamarin은 각 플렛폼의 Native API를 .NET 관용어구로 표현하는 라이브러리와 바인딩을 제공합니다.
+현재 Xamarin은 네이티브 Mac, iOS 및 Android API를 지원하는 C#, .NET 도구들을 제공합니다. 이러한 도구는 Xamarin.Mac, Xamarin.iOS 및 Xamarin.Android라고 불리며 Xamarin 플랫폼이라고 통칭합니다. Xamarin은 각 플렛폼의 Native API를 .NET 관용어구로 표현하는 라이브러리와 바인딩을 제공합니다.
 
-개발자는 Mac, iOS 또는 Android 어플리케이션을 개발하기 위해 Xamarin 플렛폼을 사용할 수 있으며 C#언어로 개발할 수 있습니다. 하나 이상의 플렛폼을 타겟으로 개발할 때는 플렛폼 간에 일부 코드를 공유하는 것이 합리적입니다. 이를 위해 프로그램 코드를 플렛폼 의존적인 코드(주로 사용자 인터페이스와 관계된 코드)와 플렛폼 중립적인코드(일반적으로 .NET 프레임워크만을 필요로하는 코드)로 분리하게 됩니다. 분리된 플렛폼 중립적인 코드는 Portable Class Library (PCL) 또는 공유 프로젝트(Shared Asset Project 또는 SAP)로 관리할 수 있습니다.
+개발자는 Mac, iOS 또는 Android 어플리케이션을 개발하기 위해 Xamarin 플렛폼을 사용할 수 있으며 C#언어로 개발할 수 있습니다. 하나 이상의 플렛폼을 타겟으로 개발할 때는 플렛폼 간에 일부 코드를 공유하는 것이 합리적입니다. 따라서 프로그램 코드를 플렛폼 의존적인 코드(주로 사용자 인터페이스와 관계된 코드)와 플렛폼 중립적인코드(일반적으로 .NET 프레임워크만을 필요로하는 코드)로 분리해야 합니다. 플렛폼 중립적인 코드는 Portable Class Library (PCL) 또는 공유 프로젝트(Shared Asset Project 또는 SAP)로 관리할 수 있습니다.
 
 > [!NOTE] 
 > Portable Class Library는 .NET Standard 라이브러리로 변경되었습니다. 이 책에서 모든 샘플 코드는 .NET 표준 라이브러리를 사용 하도록 변경되었습니다.
 
 ## <a name="introducing-xamarinforms"></a>Xamarin.Forms 소개
 
-여러 모바일 플랫폼을 대상으로 하는 경우 Xamarin.Forms 더 많은 코드 공유를 허용 합니다. Xamarin.Forms로 작성된 단일 프로그램은 5개의 고유한 플랫폼들을 지원 할 수 있습니다.
+여러 모바일 플랫폼을 대상으로 하는 경우 Xamarin.Forms는 더 많은 코드 공유를 허용 합니다. Xamarin.Forms로 작성된 단일 프로그램은 5개의 고유한 플랫폼들을 지원 할 수 있습니다.
 
 - iPhone, iPad 및 iPod touch에서 실행되는 프로그램을 지원하는 iOS
 - Android 휴대폰 및 태블릿에서 실행되는 프로그램을위한 Android
@@ -68,7 +68,7 @@ Xamarin.Forms API들은 각 플랫폼의 네이티브 컨트롤에 매핑되게 
 
 또한 Xamarin.Forms는 XAML(마이크로소프트에서 개발한 Extensible Application Markup Language)을 지원합니다. 위에 나타난 프로그램들의 시각적인 부분은 XAML로 정의되어 있으며 [ **PlatformVisuals** ](https://github.com/xamarin/xamarin-forms-book-samples/tree/master/Chapter01/PlatformVisuals) 샘플에서 확인하실 수 있습니다.
 
-Xamarin.Forms 프로그램은 실행 중인 플랫폼이 어떤 플렛폼인지 식별할 수 있으며, 플렛폼에 따라 서로 다른 코드를 실행할 수 있습니다. 또한 개발자는 각 플렛폼을 위한 고유코드들을 작성할 수 있으며 이렇게 작성한 코드들을 Xamarin.Forms에서 플렛폼 중립적인 방법으로 호출할 수 있습니다. 작성할 더를 아주 개발자는 다양 한 플랫폼에 대 한 사용자 지정 코드를 작성 하 고 플랫폼 독립적인 방식으로 Xamarin.Forms 프로그램에서 해당 코드를 실행할 수 있습니다. 또한 개발자는 각 플랫폼을 위한 렌더러를 작성함으로써 추가적인 컨트롤을 작성 할 수 있습니다.
+Xamarin.Forms 프로그램은 실행 중인 플랫폼이 어떤 플렛폼인지 식별할 수 있으며, 플렛폼에 따라 서로 다른 코드를 실행할 수 있습니다. 또한 개발자는 각 플렛폼을 위한 커스텀 코드들을 작성할 수 있으며 이렇게 작성한 코드들을 Xamarin.Forms에서 플렛폼 중립적인 방법으로 호출할 수 있습니다. 개발자는 각 플랫폼을 위한 렌더러를 작성함으로써 추가적인 컨트롤을 작성 할 수 있습니다.
 
 Xamarin.Forms는 비지니스 어플리케이션을 개발하거나 빠른 개념 증명 데모를 만들거나 프로토타입 어플리케이션에 적합한 솔루션이지만, 벡터 그래픽 이나 복잡한 터치 상호 작용을 필요로 하는 응용 프로그램 개발에 대해서는 덜 적합합니다.
 
