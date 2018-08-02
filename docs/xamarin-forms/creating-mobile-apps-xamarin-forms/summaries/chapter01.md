@@ -14,14 +14,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 07/19/2018
 ms.locfileid: "39156485"
 ---
-# <a name="summary-of-chapter-1-how-does-xamarinforms-fit-in"></a>요약 1 장입니다. Xamarin.Forms 포함할 됩니까?
+# <a name="summary-of-chapter-1-how-does-xamarinforms-fit-in"></a>요약 1 장. Xamarin.Forms는 어떻게 우리의 요구사항을 충족시켜줄까요?
 
 > [!NOTE] 
 > 이 페이지에 대 한 참고 사항 Xamarin.Forms 책의 내용을에서 달라졌는지를 위치 하는 영역을 나타냅니다.
 
-해당 플랫폼에는 다른 프로그래밍 언어를 포함 하는 경우에 특히 다른 플랫폼에서 기본 코드를 이식가 프로그래밍에서 가장 원하지 않는 작업 중 하나입니다. 유혹도 리팩터링 하는 코드를 이식 하는 경우 있지만 두 플랫폼 모두 병렬로 유지 해야 하는 경우 다음 두 코드 베이스의 차이점은 어려워질 향후 유지 관리 합니다.
+프로그래밍에서 가장 즐겁지 않은 작업 중 하나는 다른 플렛폼으로 코드를 포팅하는 작업입니다. 특히 다른 프로그래밍 언어로 포팅하는 작업은 더욱 쉽지 않은 작업입니다. 포팅하면서 리팩토링 충동을 느낄 수 있으며 포팅된 코드와 기존 코드는 동시에 유지보수 되어야 하기 때문에 두 코드베이스 간의 차이점은 유지보수를 더욱 어렵게 만들 것입니다.
 
-## <a name="cross-platform-mobile-development"></a>플랫폼 간 모바일 개발
+## <a name="cross-platform-mobile-development"></a>크로스 플렛폼 모바일 개발
 
 모바일 플랫폼을 대상으로 하는 경우이 문제가 일반적입니다. 현재 두 가지 주요 모바일 플랫폼, iOS 운영 체제 및 다양 한 휴대폰과 태블릿에서 실행 되는 Android 운영 체제를 실행 하는 Ipad 및 Iphone의 Apple 제품군 존재 합니다. 다른 중요 한 플랫폼은 Microsoft의 Windows 플랫폼 (UWP (유니버설), Windows 10 Mobile 및 Windows 10을 대상으로 한 개의 프로그램을 수 있습니다.
 
